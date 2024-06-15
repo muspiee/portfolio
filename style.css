@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    min-height: 100vh;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home, #portfolio {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about, #contact {
+    background: #444;
+}
+
+@keyframes rocket {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.rocket-animation {
+    animation: rocket 1s ease-out forwards;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: #fff;
+    color: #444;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link.youtube {
+    background-color: #ff0000; /* YouTube red */
+    color: #fff; /* white text */
+}
+
+.social-link.youtube:hover {
+    background-color: #cc0000; /* darker red on hover */
+}
+
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.work-list {
+    list-style: none;
+    padding: 0;
+}
+
+.work-list li {
+    background: #fff;
+    color: #333;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-list li a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.work-list li a:hover {
+    text-decoration: underline;
+}
